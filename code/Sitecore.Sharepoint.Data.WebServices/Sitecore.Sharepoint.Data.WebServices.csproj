@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <AssemblyName>Sitecore.Sharepoint.Data.WebServices</AssemblyName>
     <PackageId>Sitecore.Sharepoint.Data.WebServices</PackageId>
   </PropertyGroup>
