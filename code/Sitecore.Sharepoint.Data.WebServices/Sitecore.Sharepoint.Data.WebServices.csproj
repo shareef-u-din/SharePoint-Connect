@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Sitecore.Sharepoint.Data.WebServices</AssemblyName>
     <PackageId>Sitecore.Sharepoint.Data.WebServices</PackageId>
   </PropertyGroup>
@@ -25,5 +25,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Sitecore.Sharepoint.Common\Sitecore.Sharepoint.Common.csproj" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
 </Project>

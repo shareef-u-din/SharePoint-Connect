@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Sitecore.Sharepoint.Web</AssemblyName>
     <PackageId>Sitecore.Sharepoint.Web</PackageId>
   </PropertyGroup>
@@ -26,5 +26,11 @@
     <ProjectReference Include="..\Sitecore.Sharepoint.Data.Providers\Sitecore.Sharepoint.Data.Providers.csproj" />
     <ProjectReference Include="..\Sitecore.Sharepoint.Installer\Sitecore.Sharepoint.Installer.csproj" />
     <ProjectReference Include="..\Sitecore.Sharepoint.ObjectModel\Sitecore.Sharepoint.ObjectModel.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
 </Project>

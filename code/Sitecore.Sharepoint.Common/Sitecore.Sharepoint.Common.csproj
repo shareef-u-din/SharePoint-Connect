@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Sitecore.Sharepoint.Common</AssemblyName>
     <PackageId>Sitecore.Sharepoint.Common</PackageId>
   </PropertyGroup>
@@ -24,6 +24,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.IdentityModel">
+      <HintPath>..\..\..\..\SharePoint dlls\System.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Services">
+      <HintPath>..\..\..\..\SharePoint dlls\System.IdentityModel.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Sitecore.Sharepoint.Tests.Unit</AssemblyName>
     <PackageId>Sitecore.Sharepoint.Tests.Unit</PackageId>
   </PropertyGroup>
@@ -34,5 +34,12 @@
     <ProjectReference Include="..\Sitecore.Sharepoint.Data.WebServices\Sitecore.Sharepoint.Data.WebServices.csproj" />
     <ProjectReference Include="..\Sitecore.Sharepoint.ObjectModel\Sitecore.Sharepoint.ObjectModel.csproj" />
     <ProjectReference Include="..\Sitecore.Sharepoint.Web\Sitecore.Sharepoint.Web.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Services" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
 </Project>

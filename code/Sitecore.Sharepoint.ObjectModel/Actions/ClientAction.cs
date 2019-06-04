@@ -1,14 +1,15 @@
 namespace Sitecore.Sharepoint.ObjectModel.Actions
 {
   using System.Web.UI;
-  using System.Web.UI.WebControls;
   using Sitecore.Sharepoint.ObjectModel.Entities.Items;
   using Sitecore.Globalization;
+    using Sitecore.Web.UI;
+    using System.Web.UI.WebControls;
 
-  /// <summary>
-  /// ClientAction class.
-  /// </summary>
-  public class ClientAction : Action
+    /// <summary>
+    /// ClientAction class.
+    /// </summary>
+    public class ClientAction : Action
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientAction"/> class.
@@ -55,7 +56,7 @@ namespace Sitecore.Sharepoint.ObjectModel.Actions
       {
         OnClientClick = string.Format(this.RawScript, this.Arguments)
       };
-      WebControl internalSpan = new WebControl(HtmlTextWriterTag.Span);
+      System.Web.UI.WebControls.WebControl internalSpan = new System.Web.UI.WebControls.WebControl(HtmlTextWriterTag.Span);
       internalSpan.Controls.Add(new Literal
       {
         Text = Translate.Text(DisplayName)
